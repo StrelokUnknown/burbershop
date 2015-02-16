@@ -12,6 +12,12 @@ body{
   background: #111 url("../img/bg-body.jpg") no-repeat center top;
 }
 
+
+.inner-page{
+    background: #f8f3f0 url("../img/pattern-white.png") repeat;
+    color: #000000;
+}
+
 .container{
     width: 940px;
     margin: 0 auto;
@@ -26,6 +32,7 @@ body{
 
 .main-header{
     background: #111;
+    color: #ffffff;
     margin-bottom: 60px;
 }
 
@@ -101,6 +108,85 @@ body{
     opacity: .3;
 }
 
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 16px;
+    padding: 10px 33px;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #ffffff;
+    background: #111111;
+    border: none;
+}
+
+.btn:hover,
+.btn:active{
+    background: #663d15;
+}
+
+.btn:disabled{
+    opacity: .5;    
+}
+
+.btn:disabled:hover{
+    background: #000;
+}
+
+.main-footer{
+    padding-top: 55px;
+    padding-bottom: 30px;
+    color: #ffffff;
+    background: #111 url("../img/pattern-black.png") repeat;
+}
+.footer-contacts {
+    float: left;
+    width: 320px;
+    margin-right: 80px;
+}
+
+.main-footer a{
+    color: #ffffff;
+}
+
+.main-footer p{
+    margin: 0;
+    margin-bottom: 2px;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.footer-social {
+    float: left;
+    text-align: center;
+}
+
+.footer-social p{
+    margin-bottom: 15px;
+}
+
+.social-btn{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 2px;
+    width: 43px;
+    height: 43px;
+    font-size: 0;
+    background: #000000 no-repeat;
+}
+
+.footer-copyright {
+    float: right;
+    text-align: center;
+}
+
+.footer-copyright .btn{
+    margin: 0;    
+}
+
+
 <!--Главная-->
 .logo{
     width: 368px;
@@ -154,7 +240,7 @@ body{
 
 .index-column-left {
     float: left;
-    width: 320px;
+    width: 350px;
 }
 
 .index-column-right {
@@ -163,11 +249,15 @@ body{
 }
 
 .index-content {
-    background: #ffffff url("img/pattern-white.png") repeat;
+    background: #ffffff url("../img/pattern-white.png") repeat;
     color: #111111;
     width: 780px;
     padding: 50px 80px;
     margin-bottom: 35px;
+}
+
+.index-content p{
+    margin-bottom: 25px;
 }
 
 .index-column-title {
@@ -184,7 +274,7 @@ body{
 }
 
 .index-news li{
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .index-news time {
@@ -193,37 +283,114 @@ body{
     text-transform: lowercase;
 }
 
-.btn {
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 16px;
-    padding: 10px 33px;
-    text-transform: uppercase;
-    font-size: 14px;
-    line-height: 24px;
-    text-decoration: none;
-    color: #ffffff;
-    background: #111111;
-    border: none;
-}
 
-.btn:hover,
-.btn:active{
-    background: #663d15;
-}
-
-.btn:disabled{
-    opacity: .5;    
-}
-
-.btn:disabled:hover{
-    background: #000;
-}
 
 .gallery {
+    position: relative;
     height: 260px;
 }
 
 .gallery-images {
-    
+    height: 164px;
+    margin: 0;
+    border: 7px solid white;
+    background: #cccccc;
+}
+
+.gallery-images img{
+    width: 286px;
+    height: 164px;
+}
+
+.gallery .btn{
+    position: absolute;
+    bottom: 0;
+    width: 140px;
+    margin: 0;
+}
+
+.index-form{
+    margin-left: -20px;
+    font-size: 0;
+}
+
+.index-form input{
+    width: 106px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    padding: 7px 15px;
+    font-size: 14px;
+    line-height: 24px;
+    border: 2px solid black;
+}
+
+.index-form .btn{
+    width: 300px;
+    margin-bottom: 0;
+}
+
+.gallery-prev{
+    left: 0;
+}
+
+.gallery-next{
+    right: 0;
+}
+
+<!--Внутренняя-->
+
+
+.inner-page .main-header{
+    margin-bottom: 55px;
+}
+
+.page-navigation h1{
+    font-size: 30px;
+    line-height: 42px;
+    margin-bottom: 20px;
+}
+
+.breadcrumps{
+    list-style: none;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.breadcrumps a{
+    color: #111111;
+    text-decoration: none;
+}
+
+.breadcrumps a:hover{
+    color: #111111;
+    text-decoration: underline;
+}
+
+.breadcrumps li{
+    display: inline-block;
+    position: relative;
+    padding-right: 40px;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.breadcrumps li:after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: 8px;
+    right: 15px;
+    background: #111111;
+    transform: rotate(45deg);
+}
+
+.breadcrumps .breadcrumps-active{
+    color: #aba9a7;
+}
+
+.breadcrumps .breadcrumps-active:after{
+    display: none;
 }

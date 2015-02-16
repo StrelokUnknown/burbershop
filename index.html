@@ -90,10 +90,55 @@
         </div>
         
         <div class="index-content clearfix">
-            
+            <div class="index-column-left">
+                <h2 class="index-column-title">Контакты</h2>
+                <p>
+                    Barbershop «Borodinski»<br>
+                    Адрес: г. Санкт-Петербург, ул. Собаки Павлова, д. 13<br>
+                    Телефон: +7 (495) 666-02-66
+                </p>
+                <p>
+                    Время работы:<br>
+                    Пн — Пт: с 10:00 до 22:00<br>
+                    Сб — Вс: с 10:00 до 19:00
+                </p>
+                <a class="btn" href="#">Как проехать</a>
+                <a class="btn" href="#">Обратная связь</a>
+            </div>
+            <div class="index-column-right">
+                <h2 class="index-column-title">Записаться</h2>
+                <p>Укажите желаемую дату и время и мы ссвяжемся с вами для подтверждения брони</p>
+                <form class="index-form" action="/echo" method="post">
+                    <input type="date" value="" placeholder="Дата">
+                    <input type="time" value="" placeholder="Время">
+                    <input type="text" name="name" value="" placeholder="Ваше имя">
+                    <input type="tel" name="tel" value="" placeholder="Телефон">
+                    <input type="submit" class="btn">
+                </form>
+            </div>
         </div>
 
     </div>
+    <footer class="main-footer">
+      <div class="container clearfix">
+        <div class="footer-contacts">
+          <p>Barbershop «Borodinski»</p>
+          <p>адрес: г. Санкт-Петербург, ул. Собаки Павлова, д. 13</p>
+          <p><a href="#">Как нас найти?</a></p>
+            <p>телефон: +7 (495) 666-02-66</p>
+        </div>
+        <div class="footer-social">
+          <p>Давайте дружить!</p>
+          <a href="#" class="social-btn social-btn-vk">Вконтакте</a>
+          <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
+          <a href="#" class="social-btn social-btn-inst">Инстаграм</a>
+        </div>
+        <div class="footer-copyright">
+          <p>Дизайн сайта:</p>
+          <a href="#" class="btn">glukhanko.ru</a>
+        </div>
+      </div>
+    </footer>
 </body>
 
 </html>
