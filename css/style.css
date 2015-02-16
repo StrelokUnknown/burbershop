@@ -1,0 +1,13 @@
+/*Общие*/
+body{
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  color: #fff;
+    
+  min-width: 960px;
+  background: #111 url("../img/bg-body.jpg") no-repeat center top;
+}
